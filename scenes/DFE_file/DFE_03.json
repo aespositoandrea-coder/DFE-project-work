@@ -7,16 +7,8 @@
   "scene":  [
     "building",
     "B1",
+    "B2",
     "part_01",
-    "part_02",
-    "part_03",
-    "part_04",
-    "part_05",
-    "part_06",
-    "part_07",
-    "part_08",
-    "part_09",
-    "part_10",
     "PP",
     "PP.FloatingX",
     "PP.FloatingZ",
@@ -86,6 +78,62 @@
             }                     
           }                 
         }             
+      }
+    },
+    {
+      "id":  "B2",
+      "type": "https://w3id.org/ontoeng/factory#Conveyor",
+      "representations": [
+        {
+          "file": "ConveyorNew.glb",
+          "unit": 1
+        }
+      ],
+      "position": [0, 0, 2000],
+      "rotation": [0, 0, 0],
+      "placementRelTo": "building",
+      "properties": {
+        "mass":  0,
+          "restitution":  0.3,
+         "friction":  0.0,
+         "MotionType":  "ANIMATED"
+      },
+      "statechart": {
+           "id":  "B2_SC",
+           "initial":  "idle",
+           "states":  {
+               "idle":  {
+                   "on":  {
+               "B2startF":  "forward",
+               "B2startB":  "backward" 
+            },
+                   "entry":  {
+               "action":  "surfaceVelocity",
+               "target":  "B2",
+               "velocity":  [0, 0, 0] 
+            }     
+          },
+               "forward":  {
+                   "on":  {
+               "B2stop":  "idle" 
+            },
+                   "entry":  {
+               "action":  "surfaceVelocity",
+               "target":  "B2",
+               "velocity":  [0, 0, 80] 
+            }     
+          },
+               "backward":  {
+                   "on":  {
+               "B2stop":  "idle" 
+            },
+                   "entry":  {
+               "action":  "surfaceVelocity",
+               "target":  "B2",
+               "velocity":  [0, 0, -80] 
+            }     
+          }   
+        } 
       }
     },
     {
