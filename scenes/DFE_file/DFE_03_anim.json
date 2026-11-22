@@ -7,7 +7,7 @@
   },
    "nodes":  [
     {
-      "id":  "B1",
+      "id":  "SensorPick",
        "actions":  [
         {
           "trigger":  {
@@ -16,7 +16,37 @@
           },
            "event":  {
             "type": "sendEvent",
-            "data":  "B1startF"
+            "data":  "cycleStart"
+          } 
+        } 
+      ] 
+    },
+    {
+      "id":  "SensorPick",
+       "actions":  [
+        {
+          "trigger":  {
+            "type":  "timestamp",
+             "data":  "150000"
+          },
+           "event":  {
+            "type": "sendEvent",
+            "data":  "endOfTimeline"
+          } 
+        } 
+      ] 
+    },
+    {
+      "id":  "B1",
+       "actions":  [
+        {
+          "trigger":  {
+            "type":  "timestamp",
+             "data":  "0"
+          },
+           "event":  {
+            "type": "sendEvent",
+            "data":  "B1startB"
           } 
         } 
       ] 
