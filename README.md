@@ -38,9 +38,9 @@ Expected result: 10/10 parts in the Box, lot completed in about 88 s.
 | File / folder | Content |
 |---|---|
 | `DFE_03_BasicModule_Report.pdf` / `.docx` | Technical report: design process, solution, validation, replication. |
-| `DFE_03.xlsm` | Modelling spreadsheet (sheet *Assets*): layout, physics properties and all StateCharts. Source of the JSON files. |
-| `DFE_03.json` | Scene, exported with *Export Scene JSON*. |
-| `DFE_03_anim.json` | Animation (only the two start events), exported with *Export Animation JSON*. |
+| `DFE_03.xlsm` | Modelling spreadsheet for animation, environment and assets. Source of all the JSON files. |
+| `DFE_03.json` | Models description, layout, physics properties and all StateCharts used in the simulation. |
+| `DFE_03_anim.json` | Animation (only the start events). |
 | `DFE_03_env.json` | Environment (cameras, lights, Havok physics). |
 | `models/` | All 3D models used by the scene. New assets: `ConveyorB2z.glb`, `ConveyorB3m.glb`, `ConveyorZone.glb`, `ConveyorB3zone.glb`, `URPedestal200.glb`. |
 | `validation/` | `validate_console.js` (validation script) and results of the validation runs. |
