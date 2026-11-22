@@ -1,21 +1,19 @@
 # DFE_03 – Digital Factory Project Work (Basic Module)
 
-Material handling system that moves the ten parts from the source conveyor **B1** into the destination **Box**, around the obstacle **Grid**, in the Virtual Learning Factory Toolkit (VEB.js with Havok physics).
+Material handling system that moves ten parts from the source conveyor **B1** into the destination **Box**, around the obstacle **Grid**, in the Virtual Learning Factory Toolkit (VEB.js).
 
-Course: Digital Factory – Prof. M. Urgo – Politecnico di Milano, A.Y. 2026/27
+Course: Digital Factory  Prof. M. Urgo and W. Terkaj – Politecnico di Milano, A.Y. 2026/27
 Author: Andrea Esposito
 
-## Quick start (1 minute, nothing to install)
+## Quick start (1 minute)
 
-1. Open this link in a desktop browser (Chrome or Edge recommended):
+1. Open this link in a desktop browser:
 
    **[▶ Open DFE_03 in VEB.js](https://digital-factory.io/vebjs/?inputscene=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03&inputanim=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_anim&inputenv=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_env&repoMod3d=https://aespositoandrea-coder.github.io/DFE-project-work/models/)**
 
 2. Wait until the scene is fully loaded (about 20–30 s).
-3. Press **Start** (top-left control panel).
+3. Press **Start**.
 4. Keep the browser tab **in the foreground** for the whole lot (about 90 s): the physics advances with the rendered frames, so a hidden or background tab slows the parts down.
-
-The scene, the animation, the environment and all 3D models are loaded directly from this repository through GitHub Pages.
 
 <details><summary>Full link (copy and paste)</summary>
 
