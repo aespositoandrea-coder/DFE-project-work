@@ -1,26 +1,70 @@
-# Digital Factory – DFE Project Work 2026-27
+# DFE_03 – Digital Factory Project Work (Basic Module)
 
-Politecnico di Milano – Management Engineering (MSc) – Digital Factory
-Author: Andrea Esposito – Assignment variant: **DFE_03**
+Material handling system that moves the ten parts from the source conveyor **B1** into the destination **Box**, around the obstacle **Grid**, in the Virtual Learning Factory Toolkit (VEB.js with Havok physics).
 
-Transportation system of 10 parts from source conveyor B1 to the destination Box, in a virtual factory run in VEB.js.
+Course: Digital Factory – Prof. M. Urgo – Politecnico di Milano, A.Y. 2026/27
+Author: Andrea Esposito
 
-## How to run
+## Quick start (1 minute, nothing to install)
 
-Open this link in a browser:
+1. Open this link in a desktop browser (Chrome or Edge recommended):
 
-https://digital-factory.io/vebjs/?inputscene=https://aespositoandrea-coder.github.io/DFE-project-work/scenes/DFE_file/DFE_03&repoMod3d=https://difactory.github.io/repository/models/PickPlaceCell/
+   **[▶ Open DFE_03 in VEB.js](https://digital-factory.io/vebjs/?inputscene=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03&inputanim=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_anim&inputenv=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_env&repoMod3d=https://aespositoandrea-coder.github.io/DFE-project-work/models/)**
 
-The scene, environment and animation are loaded from this repository through GitHub Pages.
+2. Wait until the scene is fully loaded (about 20–30 s).
+3. Press **Start** (top-left control panel).
+4. Keep the browser tab **in the foreground** for the whole lot (about 90 s): the physics advances with the rendered frames, so a hidden or background tab slows the parts down.
 
-## Repository content
+The scene, the animation, the environment and all 3D models are loaded directly from this repository through GitHub Pages.
 
-| File | Description |
+<details><summary>Full link (copy and paste)</summary>
+
+```
+https://digital-factory.io/vebjs/?inputscene=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03&inputanim=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_anim&inputenv=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_env&repoMod3d=https://aespositoandrea-coder.github.io/DFE-project-work/models/
+```
+</details>
+
+## What you will see
+
+B1 → **PP** → **B2** → **B2E** → **PP2** → **B3** → **B3E** → **UR1** → Box (2 rows × 5 cells)
+
+- Belts run at 200 mm/s (B1), 150 mm/s (B2, B2E) and 160 mm/s (B3, B3E).
+- **B2E** and **B3E** are short accumulation zones in front of the robots: the main belts run continuously and stop only when the zone in front of the robot is occupied.
+- **UR1** (6-axis robot on a 200 mm pedestal) places the parts in the Box, about one part every 5.2 s.
+- **End of lot by counting sensors:** SensorPick stops B1 after the 10th part, SensorZ2 stops B2 when the 10th part has passed onto B2E, SensorEnd stops B3, B3E and B2E after UR1 has picked the 10th part.
+
+Expected result: 10/10 parts in the Box, lot completed in about 88 s.
+
+## Contents
+
+| File / folder | Content |
 |---|---|
-| `scenes/DFE_file/DFE_03.xlsm` | Spreadsheet model |
-| `scenes/DFE_file/DFE_03.json` | Scene definition |
-| `scenes/DFE_file/DFE_03_env.json` | Environment definition |
-| `scenes/DFE_file/DFE_03_anim.json` | Animation definition |
+| `DFE_03_BasicModule_Report.pdf` / `.docx` | Technical report: design process, solution, validation, replication. |
+| `DFE_03.xlsm` | Modelling spreadsheet (sheet *Assets*): layout, physics properties and all StateCharts. Source of the JSON files. |
+| `DFE_03.json` | Scene, exported with *Export Scene JSON*. |
+| `DFE_03_anim.json` | Animation (only the two start events), exported with *Export Animation JSON*. |
+| `DFE_03_env.json` | Environment (cameras, lights, Havok physics). |
+| `models/` | All 3D models used by the scene. New assets: `ConveyorB2z.glb`, `ConveyorB3m.glb`, `ConveyorZone.glb`, `ConveyorB3zone.glb`, `URPedestal200.glb`. |
+| `validation/` | `validate_console.js` (validation script) and results of the validation runs. |
+| Demonstration video | *[add link or file name]* |
+| `serve.py` | Optional local server to run the scene offline. |
 
-## Conventions
-Lengths and velocities are in millimetres.
+## Reproduce the validation
+
+1. Open the link above and wait for the scene to load (do **not** press Start yet).
+2. Open the browser console (**F12 → Console**), paste the content of [`validation/validate_console.js`](validation/validate_console.js) and press Enter.
+3. Press **Start**. About 8 s after the last pick the console prints a summary (parts in the Box, placement error, lot time, belt stop times, frame rate) and the browser downloads `DFE_03_validation_events.csv` and `DFE_03_validation_summary.json`.
+
+If the summary warns that the frame rate dropped below 30 fps, repeat the run with the tab in the foreground and fewer programs open.
+
+## Modify the model
+
+Edit `DFE_03.xlsm`, regenerate the JSON files with **Export Scene JSON** and **Export Animation JSON**, and upload the updated files to this repository.
+
+## Run offline (optional)
+
+```
+python serve.py
+```
+
+Then use the link above, replacing `https://aespositoandrea-coder.github.io/DFE-project-work/` with `http://localhost:8000/`.
