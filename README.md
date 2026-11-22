@@ -54,12 +54,6 @@ Expected result: 10/10 parts in the Box, lot completed in about 88 s.
 
 If the summary warns that the frame rate dropped below 30 fps, repeat the run with the tab in the foreground and fewer programs open.
 
-## Modify the model
-
-Edit `DFE_03.xlsm`, regenerate the JSON files with **Export Scene JSON** and **Export Animation JSON**, and upload the updated files to this repository.
-
-## Run offline (optional)
-
 ```
 python serve.py
 ```
