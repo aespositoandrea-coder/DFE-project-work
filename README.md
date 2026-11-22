@@ -1,4 +1,4 @@
-# DFE_03 – Digital Factory Project Work (Basic Module)
+# Pick and place factory simulation (Digital Factory Project Work)
 
 Material handling system that moves ten parts from the source conveyor **B1** into the destination **Box**, around the obstacle **Grid**, in the Virtual Learning Factory Toolkit (VEB.js).
 
