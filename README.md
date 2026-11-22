@@ -45,7 +45,6 @@ Expected result: 10/10 parts in the Box, lot completed in about 88 s.
 | `models/` | All 3D models used by the scene. New assets: `ConveyorB2z.glb`, `ConveyorB3m.glb`, `ConveyorZone.glb`, `ConveyorB3zone.glb`, `URPedestal200.glb`. |
 | `validation/` | `validate_console.js` (validation script) and results of the validation runs. |
 | Demonstration video | *[add link or file name]* |
-| `serve.py` | Optional local server to run the scene offline. |
 
 ## Reproduce the validation
 
