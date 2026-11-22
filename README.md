@@ -43,19 +43,4 @@ Expected result: 10/10 parts in the Box, lot completed in about 88 s.
 | `DFE_03_anim.json` | Animation (only the start events). |
 | `DFE_03_env.json` | Environment (cameras, lights, Havok physics). |
 | `models/` | All 3D models used by the scene. |
-| `validation/` | `validate_console.js` (validation script) and results of the validation runs. |
 | Demonstration video | *[add link or file name]* |
-
-## Reproduce the validation
-
-1. Open the link above and wait for the scene to load (do **not** press Start yet).
-2. Open the browser console (**F12 → Console**), paste the content of [`validation/validate_console.js`](validation/validate_console.js) and press Enter.
-3. Press **Start**. About 8 s after the last pick the console prints a summary (parts in the Box, placement error, lot time, belt stop times, frame rate) and the browser downloads `DFE_03_validation_events.csv` and `DFE_03_validation_summary.json`.
-
-If the summary warns that the frame rate dropped below 30 fps, repeat the run with the tab in the foreground and fewer programs open.
-
-```
-python serve.py
-```
-
-Then use the link above, replacing `https://aespositoandrea-coder.github.io/DFE-project-work/` with `http://localhost:8000/`.
