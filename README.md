@@ -42,7 +42,7 @@ Expected result: 10/10 parts in the Box, lot completed in about 88 s.
 | `DFE_03.json` | Models description, layout, physics properties and all StateCharts used in the simulation. |
 | `DFE_03_anim.json` | Animation (only the start events). |
 | `DFE_03_env.json` | Environment (cameras, lights, Havok physics). |
-| `models/` | All 3D models used by the scene. New assets: `ConveyorB2z.glb`, `ConveyorB3m.glb`, `ConveyorZone.glb`, `ConveyorB3zone.glb`, `URPedestal200.glb`. |
+| `models/` | All 3D models used by the scene. |
 | `validation/` | `validate_console.js` (validation script) and results of the validation runs. |
 | Demonstration video | *[add link or file name]* |
 
