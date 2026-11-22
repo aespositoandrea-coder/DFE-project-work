@@ -15,7 +15,7 @@ Author: Andrea Esposito
 3. Press **Start**.
 4. Keep the browser tab **in the foreground** for the whole lot (about 90 s): the physics advances with the rendered frames, so a hidden or background tab slows the parts down.
 
-<details><summary>Full link (copy and paste)</summary>
+<details><summary>Full link (if needed copy and paste)</summary>
 
 ```
 https://digital-factory.io/vebjs/?inputscene=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03&inputanim=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_anim&inputenv=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_env&repoMod3d=https://aespositoandrea-coder.github.io/DFE-project-work/models/
@@ -24,7 +24,7 @@ https://digital-factory.io/vebjs/?inputscene=https://aespositoandrea-coder.githu
 
 ## What you will see
 
-B1 → **PP** → **B2** → **B2E** → **PP2** → **B3** → **B3E** → **UR1** → Box (2 rows × 5 cells)
+Conveyor B1 → **Cartesian robot PP** → **Conveyor B2** → **Conveyor B2E** → **Cartesian robot PP2** → **Conveyor B3** → **Conveyor B3E** → **Robotic arm UR1** → Pallet Box (2 rows × 5 cells)
 
 - Belts run at 200 mm/s (B1), 150 mm/s (B2, B2E) and 160 mm/s (B3, B3E).
 - **B2E** and **B3E** are short accumulation zones in front of the robots: the main belts run continuously and stop only when the zone in front of the robot is occupied.
