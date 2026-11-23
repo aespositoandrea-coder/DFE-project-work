@@ -31,7 +31,7 @@ Conveyor B1 → **Cartesian robot PP** → **Conveyor B2** → **Conveyor B2E** 
 - **UR1** (6-axis robot on a 200 mm pedestal) places the parts in the Box, about one part every 5.2 s.
 - **End of lot by counting sensors:** SensorPick stops B1 after the 10th part, SensorZ2 stops B2 when the 10th part has passed onto B2E, SensorEnd stops B3, B3E and B2E after UR1 has picked the 10th part.
 
-Expected result: 10/10 parts in the Box, lot completed in about 88 s.
+Expected result: 10/10 parts in the Box, lot completed in 85 s.
 
 ## Contents
 
