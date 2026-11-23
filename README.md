@@ -43,4 +43,4 @@ Expected result: 10/10 parts in the Box, lot completed in about 88 s.
 | `DFE_03_anim.json` | Animation (only the start events). |
 | `DFE_03_env.json` | Environment (cameras, lights, Havok physics). |
 | `models/` | All 3D models used by the scene. |
-| Demonstration video | *[add link or file name]* |
+| Demonstration video | Video_demonstration/Pick&Place.mp3 |
