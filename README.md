@@ -7,7 +7,7 @@ Author: Andrea Esposito
 
 ## Quick start (1 minute)
 
-1. Open this link in a desktop browser:
+1. Click this link to run the model:
 
    **[▶ Open DFE_03 in VEB.js](https://digital-factory.io/vebjs/?inputscene=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03&inputanim=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_anim&inputenv=https://aespositoandrea-coder.github.io/DFE-project-work/DFE_03_env&repoMod3d=https://aespositoandrea-coder.github.io/DFE-project-work/models/)**
 
