@@ -13,7 +13,7 @@ Author: Andrea Esposito
 
 2. Wait until the scene is fully loaded (about 20–30 s).
 3. Press **Start**.
-4. Keep the browser tab **in the foreground** for the whole lot (about 90 s): the physics advances with the rendered frames, so a hidden or background tab slows the parts down.
+4. Keep the browser tab **in the background** closed for the whole lot (about 90 s): the physics advances with the rendered frames, so opened tabs could slow down the motion.
 
 <details><summary>Full link (if needed copy and paste)</summary>
 
