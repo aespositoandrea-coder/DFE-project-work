@@ -38,8 +38,8 @@ Expected result: 10/10 parts in the Box, lot completed in 85 s.
 | File / folder | Content |
 |---|---|
 | `DFE_03_BasicModule_Report.pdf` | Technical report: design process, solution, validation, replication. |
-| `DFE_03.xlsm` | Modelling spreadsheet for animation, environment and assets. Source of all the JSON files. |
-| `DFE_03.json` | Models description, layout, physics properties and all StateCharts used in the simulation. |
+| `DFE_03.xlsm` | Modelling spreadsheet for animation, environment and assets. Source of all the JSON files, here you can find all the statecharts used. |
+| `DFE_03.json` | Models description, layout, physics properties and all the StateCharts. |
 | `DFE_03_anim.json` | Animation (only the start events). |
 | `DFE_03_env.json` | Environment (cameras, lights, physics). |
 | `models/` | All 3D models used by the scene. |
