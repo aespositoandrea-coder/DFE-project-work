@@ -43,5 +43,5 @@ Expected result: 10/10 parts in the Box, lot completed in 85 s.
 | `DFE_03_anim.json` | Animation (only the start events). |
 | `DFE_03_env.json` | Environment (cameras, lights, physics). |
 | `models/` | All 3D models used by the scene. |
-| `Video_demonstration/` | Pick&Place.mp3. |
+| `Video_demonstration/` | Video demonstration of the working line "Pick&Place.mp3". |
 | `Technical_report/` | Deeper explanation of working methodology, objective and technical application. |
