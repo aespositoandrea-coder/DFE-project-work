@@ -3,6 +3,7 @@
 Material handling system that moves the ten parts from the source conveyor **B1** into the destination **Box** in the Virtual Learning Factory Toolkit (VEB.js), routing them around the obstacle **Grid**. These are fixed elements of the factory layout: their position and model cannot be changed.
 
 Course: Digital Factory  Prof. M. Urgo and W. Terkaj
+
 Author: Andrea Esposito
 
 ## Quick start (1 minute)
